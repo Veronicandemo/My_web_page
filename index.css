@@ -1,35 +1,68 @@
 *{
+    margin: 0;
+    padding: 0;
 
 
 }
+/* PAGE SECTIONS */
 body{
     border-top: 6px solid #1098ad;
     color: #444;
     font-family: sans-serif;
+    position: relative;
 }
-
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
 
 .main-header{
 background-color: #f8f5f5;
+padding: 20px 40px;
+margin-bottom: 60px;
+height: 80px;
 }
+nav{
+    font-size: 18px;
+    text-align: center;
+}
+article{
+    margin-bottom: 60px;
+}
+.post-header{
+    margin-bottom: 60px;
+}
+aside {
+    background-color: #f8f5f5;
+    border-top:5px solid #1098ad;
+    border-bottom:4px solid #1098ad;
+    width: 500px;
+    padding: 50px 0;
+}
+/*  SMALLER ELEMENTS*/
 h1,h2,h3{
     color: #1098ad;
+    /* margin: 18px 0; */
+    /* text-align: center; */
 }
 h1{
     font-size: 30px;
     text-transform: uppercase;
     font-style: italic;
+
 }
 
-h2{
-    font-size: 40px;
 
+h2{
+    font-size: 35px;
+    position: relative;
   
 }
 
 
 h3{
     font-size: 20px;
+    text-align: center;
 }
 h4{
     font-size: 20px;
@@ -38,12 +71,21 @@ h4{
 }
 p{
     font-size: 20px;
-    ;
+    margin-top: 20px 30px;
+    padding-left: 10px;
     line-height: 1.5;
+}
+ol,ul{
+    margin-left: 30px;
+    margin-bottom: 20px;
 }
 li {
     font-size: 18px;
+    margin-left: 40px;
+    line-height: 1.5;
+
 }
+
 /* footer p{
     font-size: 16px;
 } */
@@ -64,11 +106,11 @@ li {
 .related{
     list-style: none;
 }
-aside {
-    background-color: #f8f5f5;
-    border-top:5px solid #1098ad;
-    border-bottom:4px solid #1098ad;
+.related-post{
+    height: auto;
+    width: auto
 }
+
 /* hyperlinks */
 a:link {
     color: #08788b;
@@ -86,4 +128,50 @@ a:hover{
 a:active{
     background-color: #cad1cf;
     font-style: italic;
+}
+.post-image{
+    width: 100%;
+    height: auto;
+}
+nav a:link{
+   /* display: block;
+   margin: 20px 0; */
+   display: inline-block;
+   margin-right: 30px;
+   margin-top: 10px; 
+   
+}
+nav a:link:last-child{
+    margin-right: 0;
+}
+button{
+    font-size: 22px;
+    padding: 20px ;
+    width: 100px;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+
+}
+/* pseudo elements */
+h1::first-letter{
+    font-style: normal;
+    margin-right: 5px;
+
+}
+h2::after{
+    content: "TOP";
+    background-color: #ffe70e;
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 20px;
+    position: absolute;
+    right: -25px;
+    top: -15px;
+   
+
 }
